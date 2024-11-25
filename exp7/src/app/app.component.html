@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="nav.toggle()"><mat-icon>menu</mat-icon></button>
+  <span class="logo">Logo</span>
+  <div class="extra"></div>
+  <mat-icon>share</mat-icon>
+  
+</mat-toolbar>
+<mat-sidenav-container class="sidenav-wrapper" >
+  <mat-sidenav #nav>
+    <a [routerLink]="['profile']" color="primary">
+      <button mat-button>
+        <mat-icon>person</mat-icon>
+        <span>Person</span>
+      </button>
+    </a>
+    <a [routerLink]="['about']" color="primary">
+      <button mat-button>
+        <mat-icon>info</mat-icon>
+        <span>About</span>
+      </button>
+    </a>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+  
