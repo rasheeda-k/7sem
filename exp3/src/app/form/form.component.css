@@ -1,0 +1,32 @@
+.registration-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .registration-form div {
+    margin-bottom: 1em;
+  }
+  
+  .registration-form label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .registration-form input {
+    width: 100%;
+    padding: 0.5em;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 0.7em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
